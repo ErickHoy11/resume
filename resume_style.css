@@ -1,3 +1,7 @@
+#resume p,ul,hr{
+    margin: 0;
+}
+
 #resume_contact{
     text-align: right;
     line-height: .25;
@@ -5,5 +9,48 @@
 
 .resume_section_title{
     text-decoration: underline;
-    line-height: 0;
+    margin-bottom: 3px;
+}
+
+#gpa{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/*work experience*/
+.work_experience_attributes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_experience_date{
+    font-weight: bold;
+}
+
+/*mobile responsive work experience*/
+@media screen and (max-width:767px){
+
+    .work_experience_attributes{
+        display: block;
+    }
+
+    #work_experience hr{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*references*/
+.reference_flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*mobile responsive references*/
+@media screen and (max-width:767px){
+
+    .reference_flexbox{
+        display: block;
+    }
 }

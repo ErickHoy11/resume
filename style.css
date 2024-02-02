@@ -2,6 +2,7 @@ body{
     margin: 0px;
 }
 
+/*navbar*/
 #navbar{
     background-color: black;
 }
@@ -23,12 +24,29 @@ body{
     color: red;
 }
 
+/*main*/
 main{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 17vw;
+    margin-right: 17vw;
 }
 
 #main_title{
     text-align: center;
     text-decoration: underline;
+}
+
+/*mobile responsive main*/
+@media screen and (max-width:767px){
+    main{
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    main *{
+        text-align: center;
+    }
+
+    main ul *{
+        text-align: left;
+    }
 }
