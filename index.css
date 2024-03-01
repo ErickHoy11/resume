@@ -1,0 +1,50 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#glowing_headshot{
+    /*background-image: linear-gradient(to right, white, hsl(0, 0%, 5%) 55%);*/
+    background-image: radial-gradient(circle 20em at 20%, white, black);
+    height: 450px;
+}
+
+#glowing_headshot img{
+    position: relative;
+    height: 90%;
+    left: 20%; /* Same position as the circle gradient */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    float: left; /* Float the image to the left */
+    
+}
+
+#glowing_headshot div {
+    float: right;
+    width: 45vw;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    padding-right: 20px;
+}
+
+#glowing_headshot button {
+background-color: hsl(120, 100%, 30%);
+color: white;
+border: none;
+height: fit-content;
+width: fit-content;
+padding: 5px;
+border-radius: 5px;
+font-size: 3vw;
+}
+
+#glowing_headshot button:hover {
+    cursor: pointer;
+    background-color: hsl(120, 100%, 40%);
+}

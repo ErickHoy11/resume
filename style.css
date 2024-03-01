@@ -4,49 +4,26 @@ body{
 
 /*navbar*/
 #navbar{
-    background-color: black;
-}
-
-#navbar{
     display: flex;
-    column-gap: 10px;
     justify-content: center;
     align-items: center;
-    min-height: 30px;
+    height: 40px;
+    background-color: hsl(0, 0%, 0%);
+
+    column-gap: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #navbar a{
-    color: white;
+    color: hsl(0, 100%, 50%);
     text-decoration: none;
 }
 
 #navbar a:hover{
-    color: red;
-}
-
-/*main*/
-main{
-    margin-left: 17vw;
-    margin-right: 17vw;
+    color: hsl(0, 100%, 80%);
 }
 
 #main_title{
     text-align: center;
     text-decoration: underline;
-}
-
-/*mobile responsive main*/
-@media screen and (max-width:767px){
-    main{
-        margin-left: 4vw;
-        margin-right: 4vw;
-    }
-
-    main *{
-        text-align: center;
-    }
-
-    main ul *{
-        text-align: left;
-    }
 }

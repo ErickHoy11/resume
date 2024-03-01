@@ -1,3 +1,26 @@
+/*main*/
+main{
+    margin-left: 17vw;
+    margin-right: 17vw;
+}
+
+/*mobile responsive main*/
+@media screen and (max-width:767px){
+    main{
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    main *{
+        text-align: center;
+    }
+
+    main ul *{
+        text-align: left;
+    }
+}
+
+
 #resume p,ul,hr{
     margin: 0;
 }
