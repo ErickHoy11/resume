@@ -2,49 +2,74 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-#glowing_headshot{
-    /*background-image: linear-gradient(to right, white, hsl(0, 0%, 5%) 55%);*/
-    background-image: radial-gradient(circle 20em at 20%, white, black);
+#hero_banner{
+    background-image: radial-gradient(circle 25em at 20%, white, hsl(0, 0%, 7%));
     height: 450px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
-#glowing_headshot img{
-    position: relative;
+#hero_banner_left{
+    width: 50%;
     height: 90%;
-    left: 20%; /* Same position as the circle gradient */
-    top: 50%;
-    transform: translate(-50%, -50%);
-    float: left; /* Float the image to the left */
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#glowing_headshot div {
-    float: right;
-    width: 45vw;
+#hero_banner_left img{
     height: 100%;
+}
+
+#hero_banner_right{
+    height: 100%;
+    width: 50%;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content:center;
     align-items: center;
-
-    padding-right: 20px;
+    text-align: center; 
 }
 
-#glowing_headshot button {
-background-color: hsl(120, 100%, 30%);
-color: white;
-border: none;
-height: fit-content;
-width: fit-content;
-padding: 5px;
-border-radius: 5px;
-font-size: 3vw;
+#hero_banner button {
+    background-color: hsl(120, 100%, 30%);
+    color: white;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 40px;
 }
 
-#glowing_headshot button:hover {
+#hero_banner button:hover {
     cursor: pointer;
     background-color: hsl(120, 100%, 40%);
+}
+
+/*mobile responsive hero_banner*/
+@media screen and (max-width:575px){
+    #hero_banner{
+        background-image: radial-gradient(circle 15em at 50% 15% , white, hsl(0, 0%, 7%));
+        height: 450px;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        padding: 5px;
+    }
+    #hero_banner_left{
+        height: 50%;
+    }
+    #hero_banner_right{
+        width: 100%;
+        height: fit-content;
+    }
+    #hero_banner_right h1{
+        text-decoration: underline;
+    }
+    #hero_banner_right *{
+        margin: .5rem;
+    }
 }
