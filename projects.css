@@ -1,0 +1,84 @@
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.project_category{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.project_category_title{
+    margin-bottom: 0px;
+    color: green;
+}
+
+.project{
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px hsl(0, 0%, 10%);    
+}
+
+.project_left_right_organizer{
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.project_left {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+    width: 50%;
+    height: fit-content; /* This will make the height adjust to the content */
+}
+
+.project_right{
+    width: 50%;
+    background-size: contain; /* ensures the image covers the entire div */
+    background-position:left; /* position the image at the center */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+}
+
+.project_description{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calculator_thumbnail{
+    background-image: url("resources/project_thumbnails/calculator_thumbnail.png");
+}
+
+#pokedex_thumbnail{
+    background-image: url("resources/project_thumbnails/pokedex_thumbnail.png");
+}
+
+#seconds_alive_thumbnail{
+    background-image: url("resources/project_thumbnails/seconds_alive_thumbnail.png");
+}
+
+#prime_management_llc_thumbnail{
+    background-image: url("resources/project_thumbnails/prime_management_llc_thumbnail.png");
+}
+
+#cwugradtracker_thumbnail{
+    background-image: url("resources/project_thumbnails/cwugradtracker_thumbnail.png");
+}
+
+
+
+
+
+
