@@ -4,6 +4,10 @@ main{
     margin-right: 17vw;
 }
 
+main *{
+    font-family:'Times New Roman', Times, serifm
+}
+
 /*mobile responsive main*/
 @media screen and (max-width:767px){
     main{
