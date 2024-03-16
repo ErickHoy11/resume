@@ -77,6 +77,10 @@ main{
     background-image: url("resources/project_thumbnails/cwugradtracker_thumbnail.png");
 }
 
+#react_resume_thumbnail{
+    background-image: url("resources/project_thumbnails/react_resume_thumbnail.png");
+}
+
 
 
 
