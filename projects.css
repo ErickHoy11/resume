@@ -81,8 +81,6 @@ main{
     background-image: url("resources/project_thumbnails/react_resume_thumbnail.png");
 }
 
-
-
-
-
-
+#counter_thumbnail{
+    background-image: url("resources/project_thumbnails/counter_thumbnail.png");
+}
